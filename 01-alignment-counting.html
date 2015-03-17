@@ -183,7 +183,7 @@ mv ctl*.fastq uvb*.fastq untrimmed</code></pre>
 <p>For the sake of time and compute requirements I’ve extracted reads that originate from a 100MB region of chromosome 4. In reality, you would want to do this with the entire genome. The first step here is to create an index.</p>
 <p>Google “Ensembl FTP” to get to the <a href="http://useast.ensembl.org/info/data/ftp/index.html">FTP download page</a>. Scroll down to the Human FASTA sequences. Click that link and copy the link to download the FASTA sequence for chromsome 4. While we’re at it let’s go ahead and download the gene set annotation (GTF file). We’re looking at chromosome 4.</p>
 <p>This is what you <em>would</em> do if you were doing this on your own. But this can take a while so I’ve already downloaded and extracted these two files for you. See <code>~/genomedata</code>.</p>
-<pre class="bash"><code>wget ftp://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz
+<pre class="bash"><code>wget ftp://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.[0-22].fa.gz
 wget ftp://ftp.ensembl.org/pub/release-77/gtf/homo_sapiens/Homo_sapiens.GRCh38.77.gtf.gz
 gunzip Homo_sapiens*.gz</code></pre>
 <p>Or just move them from genomedata in the home directory:</p>

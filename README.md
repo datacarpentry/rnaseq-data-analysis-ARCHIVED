@@ -14,18 +14,21 @@ By the end of the workshop, participants will: (1) know how to align and quantit
 
 ## OS & Hardware Requirements
 
-Ubuntu 64-bit Desktop OS (version 12.04 or 14.04) is required in order to run BRB-DGE. The Ubuntu ISO file can be downloaded from Ubuntu Download page. Students should follow the instructions here: http://linus.nci.nih.gov/bdge/
+Ubuntu 64-bit Desktop OS (version 12.04 or 14.04) is required in order to run BRB-DGE. The recommended hardware requirement may vary depending on the size of data. It is recommended that the machine has at least 8GB of RAM and 500GB hard disk space. To install BRB-DGE please follow the instructions here: http://linus.nci.nih.gov/bdge/
 
+BRB-DGE automatically install the following tools:
 
-Participants need to install:
-
-* Basic shell utilities: gcc, make, ruby, curl, git, parallel, unzip, default-jre
 * bowtie2: <http://bowtie-bio.sourceforge.net/bowtie2/index.shtml>
 * tophat2: <http://ccb.jhu.edu/software/tophat/index.shtml>
-* featureCounts (part of subread): <http://subread.sourceforge.net/>
 * samtools: <http://samtools.sourceforge.net/>
-* fastx-toolkit: <http://hannonlab.cshl.edu/fastx_toolkit/>
+* SRA Toolkit: <http://www.ncbi.nlm.nih.gov/Traces/sra/?view=software>
 * FastQC: <http://www.bioinformatics.babraham.ac.uk/projects/fastqc/>
+
+Other tools that will be required:
+
+* Basic shell utilities: gcc, make, ruby, curl, git, parallel, unzip, default-jre
+* featureCounts (part of subread): <http://subread.sourceforge.net/>
+* fastx-toolkit: <http://hannonlab.cshl.edu/fastx_toolkit/>
 * R: <http://www.r-project.org/>
 * RStudio: <http://www.rstudio.com/>
 * R packages: Bioconductor core (i.e., `biocLite()`), DESeq2
