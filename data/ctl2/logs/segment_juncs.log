@@ -1,0 +1,16 @@
+segment_juncs v2.0.9 (3067M)
+---------------------------
+[samopen] SAM header is present: 1 sequences.
+Loading reference sequences...
+	Loading 4...done
+	Loading ...done
+>> Performing segment-search:
+Loading left segment hits...
+done.
+	found 914 potential split-segment junctions
+	found 12 potential small deletions
+	found 15 potential small insertions
+Reported 914 total potential splices
+Reporting 12 potential deletions...
+Reporting 15 potential insertions...
+Reporting potential fusions...

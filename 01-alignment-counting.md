@@ -154,6 +154,30 @@ Now, let's build an index. Tophat is a spliced aligner. It uses the Bowtie align
 bowtie2-build -h
 bowtie2-build chr4.fa chr4
 ```
+This should generate a set of bt2 files that will be used in the next step.
+
+### Alignment and Counting with BRB Digital Gene Expression
+
+By now, the following files should be present:
+
+* The fastq files ctl1.fastq, ctl2.fastq, ctl3.fastq, uvb1.fastq, uvb2.fastq, and uvb3.fastq
+* The fasta files Homo_sapiens.GRCh38.dna.chromosome.[0-22].fa. This file should be renamed as chr4.fa.
+* The gtf file Homo_sapiens.GRCh38.77.gtf
+* The bt2 files ch4.1.bt2, ch4.2.bt2, ch4.3.bt2, ch4.4.bt2, ch4.rev.1.bt2, and ch4.rev.2.bt2
+
+Those files will serve as input of the brg-dge tool, that should be run with the following command.
+
+```bash
+./BDGE
+```
+
+The tool provides a GUI interface where the parameters for the alignment and counting can be specified:
+
+* `Data Dir`: this parameter should contain the path to the fastq files
+* `Annotation Dir`: this parameter should contain the path to the fasta, gtf and bt2 files. 
+* `Output Dir`: this parameter should contain the path to the output folder, where the counter files will be stored.
+
+Once the parameters are properly configured, the preprocessing can be run by clicking the button `Run Preprocessing`. The program then performs the alignment and counting by mapping the fastq reads with the reference genome. A set of *.count files will be generated in the specified output dir.
 
 ### Alignment with TopHat
 
